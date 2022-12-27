@@ -201,6 +201,7 @@ header nav .menu .menu-link {
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
     border-radius: 4px;
+
 }
 .backdrop{
     position: fixed;
@@ -212,10 +213,15 @@ header nav .menu .menu-link {
     width: 100%;
     height: 100%;
     z-index: 5;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+             visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .is-hidden{
-    opacity: 0;
     pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
 }
 
 .icon-close-modal{
