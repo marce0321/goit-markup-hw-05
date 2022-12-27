@@ -181,7 +181,10 @@ header nav .menu .menu-link {
     margin-top: 1%;
     width: 261px;
     position:relative;
+    cursor: pointer;
+    
 }
+/*---modal---*/
 .modal {
     position: absolute;
     display: flex;
@@ -210,8 +213,23 @@ header nav .menu .menu-link {
     height: 100%;
     z-index: 5;
 }
+.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+
 .icon-close-modal{
+    width: 10px;
+    height: 10px;
+    fill: var(--black); 
+}
+.close-modal{
+    width: 30px;
+    height: 30px;
     border-radius: 25px;
+    background:var(--white);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 /*---services---*/
 
